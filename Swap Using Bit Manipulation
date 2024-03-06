@@ -1,0 +1,13 @@
+public class BitManipulation {
+    public static void Swap(int x , int y) {
+        System.out.println("before swap values are x = "+x+ " and y = "+y);
+        x = x^y;
+        y = y^x;
+        x = x^y;
+        System.out.println("after swap values are x = "+x+ " and y = "+y);
+    }
+    public static void main(String[] args) {
+        Swap(3, 5);
+    }
+    
+}
